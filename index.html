@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub to Unlock - ViVienDo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Sub to Unlock</h1>
+        <p class="instruction-text">This page was created by ViVienDo with the aim of making it easier to download Username and Password Login!</p>
+        <button id="subscribe-btn" class="active" onclick="handleClick('subscribe')">
+            Subscribe YouTube
+            <div class="loading"></div>
+        </button>
+        <button id="follow-btn" disabled onclick="handleClick('follow')">
+            Like + Comment
+            <div class="loading"></div>
+        </button>
+        <hr>
+        <div class="progress" id="progress-text">
+            Unlock Progress: <span class="progress-text">0/2</span>
+        </div>
+        <!-- Progress Bar Container -->
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <button id="unlock-button" disabled onclick="unlockPage()">
+            <i class="fas fa-unlock"></i> Unlock Link
+        </button>
+        <div class="popup" id="popup">
+            <div class="popup-content">Please Wait...</div>
+        </div>
+        <!-- Box Mode -->
+        <div class="box-mode">
+            <h3>How to Unlock link ?</h3>
+            <p>Complete all the above actions one by one set by ViVienDo to unlock this link. When you have performed all the actions requested by ViVienDo, after completing all the steps, click the unlock link button that has already turned green.</p>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

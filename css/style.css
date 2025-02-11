@@ -1,0 +1,181 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f3f4f7, #e9ecef); /* Subtle gradient background */
+}
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 420px;
+    animation: fadeIn 1s ease-out;
+}
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+button.active {
+    background-color: #6c757d; /* Neutral state color */
+}
+button.completed {
+    background: linear-gradient(135deg, #28a745, #3cd27d); /* Success gradient */
+}
+#subscribe-btn {
+    background: linear-gradient(135deg, #ff0000, #ff5733); /* Modern YouTube gradient */
+}
+#follow-btn {
+    background: linear-gradient(135deg, #ff007b, #ff6699); /* Instagram gradient */
+}
+#join-btn {
+    background: linear-gradient(135deg, #00b2ff, #0088cc); /* Telegram gradient */
+}
+#unlock-button {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #6c757d, #b0b3b8); /* Default button gradient */
+}
+#unlock-button.active {
+    background: linear-gradient(135deg, #28a745, #43c26e); /* Success green gradient */
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+.loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top: 3px solid #007bff; /* Highlight color */
+    border-right: 3px solid #007bff;
+    animation: modern-spin 0.8s linear infinite;
+}
+@keyframes modern-spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #dee2e6;
+}
+.progress {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #495057;
+    transition: all 0.5s ease;
+}
+.progress-text {
+    font-weight: 700;
+    font-size: 18px;
+}
+/* Progress Bar Styling */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e9ecef;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(135deg, #28a745, #3cd27d); /* Progress gradient */
+    transition: width 0.5s ease;
+}
+/* Instruction Text Styling */
+.instruction-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 10px;
+    font-style: italic;
+}
+/* Box Styling */
+.box-mode {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.box-mode h3 {
+    font-size: 18px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+.box-mode p {
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.6;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.popup-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for the Download button and the icon */
+#unlock-button i {
+    margin-right: 8px; /* Add space between icon and text */
+}
